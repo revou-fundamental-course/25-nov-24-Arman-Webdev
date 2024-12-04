@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Kalkulator BMI</h1>
+      <!-- First Article -->
+      <article>
+        <p>
+          Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
+          bentuk tubuh yang menunjang penampilan, berat badan ideal juga
+          menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung
+          sekarang dikalkulator BMI.
+        </p>
+      </article>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="left-sec">
+          <h4>
+            Silahkan Masukkan Berat badan(kg), Usia (tahun), dan Tinggi Badan
+            (cm) anda dibawah ini!
+          </h4>
+          <form id="bmi">
+            <div class="parent-form">
+              <div class="form-item">
+                <input
+                  type="number"
+                  min="0"
+                  id="beratBadan"
+                  placeholder="Berat Badan (kg)"
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="number"
+                  min="0"
+                  id="tinggiBadan"
+                  placeholder="Tinggi Badan (cm)"
+                />
+              </div>
+              <div class="form-item">
+                <input
+                  type="number"
+                  min="0"
+                  id="umur"
+                  placeholder="Umur (tahun)"
+                />
+              </div>
+              <div class="button-div">
+                <button type="submit">Hitung BMI</button
+                ><button type="reset">Reset</button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Second Article -->
+          <article class="sec-article">
+            <h1>Keunggulan Fitur</h1>
+            <ol>
+              <li>Menghitung berat badan.</li>
+              <li>Menentukan kategori berat badan ideal atau tidak.</li>
+              <li>Mempersiapkan program penurunan berat badan.</li>
+            </ol>
+            <p>
+              Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita
+              hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)
+              dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+              selain berkonsultasi dengan orang yang memenuhi syarat seperti
+              dokter.
+            </p>
+            <p>
+              Kalkulator akan memberi anda gambaran tentang perbandingan berat
+              badan anda dengan nilai umum Indeks Massa Tubuh (BMI) dihitung
+              sebagai berat badan anda (kg) dibagi dengan kuadrat tinggi badan
+              anda (m) atau BMI = kg/m<sup>2</sup>.
+            </p>
+          </article>
+        </section>
+
+        <!-- Section Hasil Kalkulasi -->
+        <section class="right-sec">
+          <div class="right-div">
+            <header>
+              <h2 class="header-hasil">Hasil</h2>
+            </header>
+            <h5>Skor BMI anda</h5>
+
+            <h5 id="result-calculation"></h5>
+            <!-- Third Article -->
+            <article>
+              <p id="info-result"></p>
+              <p id="desc-result"></p>
+            </article>
+          </div>
+
+          <div class="btn-class">
+            <button id="button-hidden1" hidden>
+              Konsultasi Ahli Gizi Via Aplikasi
+            </button>
+            <button id="button-hidden2" hidden>
+              Registrasi Online Ahli Gizi
+            </button>
+          </div>
+          <p id="p-hidden" hidden>
+            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
+            tubuh dan resiko penyakit seseorang. Anda perlu Konsultasi lebih
+            lanjut mengenai resiko kekhawatiran anda terkait dengan berat badan
+            anda
+          </p>
+          <div id="div-hidden" hidden>
+            <h4>Beberapa penyakit yang berasal dari kegemukan</h4>
+            <ul>
+              <li>Diabetes</li>
+              <li>Hipertensi</li>
+              <li>Sakit Jantung</li>
+              <li>Osteoarthritis</li>
+            </ul>
+            <div class="button-service">
+              <button>Konsultasi Dokter Via Aplikasi</button>
+              <button>Registrasi Online Sekarang</button>
+            </div>
+            <h5>Download Aplikasi</h5>
+            <div class="btn-download">
+              <button>PlayStore</button>
+              <button>AppStore</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>Made By <span class="heart">❤</span> ArmanSE</footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
